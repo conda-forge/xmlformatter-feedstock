@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.2.8
+  version: "0.2.9"
 
 package:
   name: xmlformatter
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/x/xmlformatter/xmlformatter-${{ version }}.tar.gz
-  sha256: ddc82e7cb4ff2669f54014e2eaf86b493d5e2da95b536f974f0a15f02763f64c
+  sha256: 22266ce398950d7848df66d5edc1bee57ead6d1b2404184c335ac4d0892d2760
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
